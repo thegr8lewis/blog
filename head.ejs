@@ -1,0 +1,152 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+</head>
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+    body{
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 20px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'PT Serif', serif;
+        
+    }
+    p, h1,h2,h3,a,ul{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: #222;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid grey;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 30px;
+        text-decoration: underline ;
+        text-decoration-color: gray;
+    }
+    nav ul li{
+        list-style-type: none;
+        margin-left: 20px;
+        color: rgb(172, 16, 16);
+    }
+    nav p{
+        margin-left: 15px;
+        margin-bottom: 0;
+    }
+
+    footer{
+        text-align: center;
+        margin: 80px auto 20px;
+        color: grey;
+    }
+
+    h1{
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    h3,h2 {
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+
+    p{
+        margin-left: 15px;
+        margin-bottom: 40px;
+    }
+    .content{
+
+        max-width: 800px;
+        /* margin: 0 auto; */
+        margin-left: 15px;
+    }
+    .blog{
+        margin-left: 30px;
+    }
+    .create-blog form{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .create-blog input,
+    .create-blog textarea{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px;
+    }
+    .create-blog  label{
+        display: block;
+        margin-top: 10px;
+    }
+    textarea{
+        height: 120px;
+    }
+    .create-blog button{
+        padding: 10px 20px;
+        background-color: #007BFF;
+        border: none;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .delete{
+        padding: 10px 20px;
+        background-color: #ce4b0e;
+        border: none;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .details content{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Media query for smaller screens, e.g., mobile devices */
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .introduction{
+        align-items: center;
+        justify-content: center;
+    }
+    .introduction h1{
+        font-size: 30px;
+    }
+    .introduction p{
+        font-size: 10px;
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        text-decoration: underline ;
+        text-decoration-color: gray;
+    }
+    nav ul li{
+        list-style-type: none;
+        color: rgb(172, 16, 16);
+    }
+}
+</style>
